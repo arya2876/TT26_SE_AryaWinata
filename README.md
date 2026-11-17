@@ -19,6 +19,8 @@ TT26_SE_AryaWinata/
 ├── report.json             # Hasil eksekusi (output wajib)
 ├── report_summary.csv      # Hasil eksekusi (output nilai tambah)
 ├── README.md
+├── .flake8                 # Konfigurasi linter (flake8)
+├── requirements-dev.txt    # Alat pengembangan (flake8) - tidak dibutuhkan untuk menjalankan program
 ├── src/
 │   ├── __init__.py
 │   ├── config.py           # Konfigurasi terpusat: batas aman, ambang DATA_HILANG, format waktu
@@ -164,13 +166,27 @@ Test tambahan mencakup:
 - Statistik dan anomali semua sensor.
 - Tes end-to-end CLI.
 
+### Menjalankan linter (flake8)
+
+```bash
+pip install -r requirements-dev.txt   # sekali saja
+python -m flake8
+```
+
+Tidak ada output dan exit code `0` berarti seluruh kode lolos pemeriksaan. Konfigurasinya ada di [.flake8](.flake8):
+- Gaya penulisan PEP 8, dengan batas panjang baris **100 karakter**.
+- Pemeriksaan kode yang tidak terpakai atau salah, misalnya import, variabel, atau nama yang tidak terdefinisi.
+- Batas kompleksitas fungsi (McCabe) **10**.
+
+`flake8` hanya alat pengembangan. Program tetap berjalan tanpa library eksternal apa pun.
+
 ---
 
 ## 6. Nilai Tambah (Opsional)
 
 1. **Argumen CLI untuk batas menit `DATA_HILANG`**: `--threshold-menit`.
 2. **Output tambahan berformat CSV**: `report_summary.csv`, satu baris per sensor. Isinya status, jumlah data, statistik suhu, rata-rata kelembapan, dan jenis anomali.
-3. **Type hints** di seluruh fungsi, serta docstring di setiap modul dan fungsi.
+3. **Type hints dan linter**: type hints di seluruh fungsi, docstring di setiap modul dan fungsi, serta linter `flake8` yang lolos tanpa temuan.
 4. Ringkasan terminal berbentuk tabel, dan exit code yang jelas untuk otomasi/CI.
 
 ---

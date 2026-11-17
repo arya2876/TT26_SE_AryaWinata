@@ -1,0 +1,3 @@
+# Alat pengembangan saja - TIDAK dibutuhkan untuk menjalankan program.
+# Program (main.py, src/) hanya memakai Python Standard Library.
+flake8>=7.0

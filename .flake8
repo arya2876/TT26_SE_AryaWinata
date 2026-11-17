@@ -1,0 +1,12 @@
+[flake8]
+# Batas panjang baris 100 karakter (default PEP 8 = 79).
+# Dipilih karena nama konstanta & pesan error berbahasa Indonesia cukup panjang;
+# 100 adalah batas yang umum dipakai tim (mis. proyek Django/Google memakai 100).
+max-line-length = 100
+
+# Peringatan jika satu fungsi terlalu bercabang (kompleksitas McCabe > 10).
+max-complexity = 10
+
+exclude =
+    .git,
+    __pycache__
