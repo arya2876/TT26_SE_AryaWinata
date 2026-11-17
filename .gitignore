@@ -1,0 +1,13 @@
+# Dokumen soal & job description bersifat internal - jangan diunggah ke repo publik
+*.docx
+README_PRESENTASI.md
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,4 @@
+sensor_id,gudang,status,jumlah_data,jumlah_data_valid,suhu_rata_rata,suhu_min,suhu_max,kelembapan_rata_rata,jumlah_anomali,jenis_anomali
+SNS-A01,A,PERLU_PERHATIAN,4,4,-17.15,-18.5,-14.2,53.5,1,SUHU_DI_LUAR_BATAS
+SNS-B01,B,PERLU_PERHATIAN,4,4,6.0,4.2,8.6,67.25,2,SUHU_DI_LUAR_BATAS|DATA_HILANG
+SNS-B02,B,PERLU_PERHATIAN,3,2,5.95,3.9,8.0,82.0,2,KELEMBAPAN_DI_LUAR_BATAS|DATA_TIDAK_VALID

@@ -1,0 +1,51 @@
+{
+  "SNS-A01": {
+    "jumlah_data_valid": 4,
+    "suhu_rata_rata": -17.15,
+    "suhu_min": -18.5,
+    "suhu_max": -14.2,
+    "anomali": [
+      {
+        "waktu": "2026-10-20 08:10",
+        "jenis": "SUHU_DI_LUAR_BATAS",
+        "nilai": -14.2
+      }
+    ]
+  },
+  "SNS-B01": {
+    "jumlah_data_valid": 4,
+    "suhu_rata_rata": 6.0,
+    "suhu_min": 4.2,
+    "suhu_max": 8.6,
+    "anomali": [
+      {
+        "waktu": "2026-10-20 08:10",
+        "jenis": "SUHU_DI_LUAR_BATAS",
+        "nilai": 8.6
+      },
+      {
+        "waktu": "2026-10-20 08:35",
+        "jenis": "DATA_HILANG",
+        "nilai": 25
+      }
+    ]
+  },
+  "SNS-B02": {
+    "jumlah_data_valid": 2,
+    "suhu_rata_rata": 5.95,
+    "suhu_min": 3.9,
+    "suhu_max": 8.0,
+    "anomali": [
+      {
+        "waktu": "2026-10-20 08:00",
+        "jenis": "KELEMBAPAN_DI_LUAR_BATAS",
+        "nilai": 85.0
+      },
+      {
+        "waktu": "2026-10-20 08:05",
+        "jenis": "DATA_TIDAK_VALID",
+        "nilai": null
+      }
+    ]
+  }
+}
